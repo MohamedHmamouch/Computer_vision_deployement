@@ -2,7 +2,7 @@
 import os
 from box.exceptions import BoxValueError
 import yaml
-from cnnClassifier import logger
+from CnnClassifier import logger
 import json 
 import joblib
 from ensure import ensure_annotations
@@ -113,3 +113,16 @@ def encodeImageIntoBase64(croppedImagePath):
     with open(croppedImagePath,"rb") as f:
 
         return base64.b64encode(f.read())
+    
+@ensure_annotations
+def create_directories(path_to_directories: list, verbose=True):
+    """create list of directories
+
+    Args:
+        path_to_directories (list): list of path of directories
+        ignore_log (bool, optional): ignore if multiple dirs is to be created. Defaults to False.
+    """
+    for path in path_to_directories:
+        os.makedirs(path, exist_ok=True)
+        if verbose:
+            logger.info(f"created directory at: {path}")
