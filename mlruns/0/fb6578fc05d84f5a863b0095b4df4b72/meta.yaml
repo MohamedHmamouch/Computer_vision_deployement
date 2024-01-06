@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/adminn/Documents/GitHub/Computer_vision_deployement/mlruns/0/fb6578fc05d84f5a863b0095b4df4b72/artifacts
+end_time: 1704499187427
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fb6578fc05d84f5a863b0095b4df4b72
+run_name: bright-croc-310
+run_uuid: fb6578fc05d84f5a863b0095b4df4b72
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1704499168825
+status: 3
+tags: []
+user_id: adminn
