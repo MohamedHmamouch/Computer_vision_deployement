@@ -2,7 +2,7 @@ import os
 from zipfile import ZipFile
 import tensorflow as tf
 import urllib.request as request
-from src.CnnClassifier.entity.config_entity import DataIngestionConfig,PrepareBaseModelConfig
+from CnnClassifier.entity.config_entity import DataIngestionConfig,PrepareBaseModelConfig
 from pathlib import Path
 
 class PrepareBaseModel:
